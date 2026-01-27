@@ -49,7 +49,7 @@ Git & GitHub – Version control & project documentation
 
 📂 Project Structure & Flow
 
-![Uploading image.png…]()
+<img width="529" height="461" alt="Ecommerce_project_structure" src="https://github.com/user-attachments/assets/b043f6c2-a939-4fc3-a8b6-84d2682b19b2" />
 
 
 🔁 End-to-End Data Flow (Step-by-Step)
