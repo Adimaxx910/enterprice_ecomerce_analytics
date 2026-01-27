@@ -48,30 +48,9 @@ Matplotlib & Seaborn – Dashboards & insights
 Git & GitHub – Version control & project documentation
 
 📂 Project Structure & Flow
-enterprice_ecomerce_analytics/
-│
-├── README.md
-│
-├── sql/
-│   ├── 01_raw_to_staging.sql        -- Data cleaning & standardization
-│   ├── 02_data_quality_checks.sql   -- Data validation & integrity checks
-│   ├── 03_clustering.sql            -- Performance optimization
-│   ├── 04_dim_tables.sql            -- Dimension tables
-│   ├── 05_fact_tables.sql           -- Fact tables (Star schema)
-│   ├── 06_constraints.sql           -- PK & FK (informational)
-│   ├── 08_daily_kpis.sql            -- Analyst daily KPIs
-│
-├── python/
-│   ├── data_generation.ipynb        -- Synthetic Kaggle-style data generation
-│   ├── validation.py                -- Automated data checks
-│   ├── kpi_extraction.py            -- KPI extraction from Snowflake
-│   └── dashboards.py                -- Python dashboards (Matplotlib & Seaborn)
-│
-├── olistdata/
-│   └── synthetic_olist_data.csv     -- Synthetic e-commerce dataset
-│
-└── dashboards/
-    └── images/                      -- Saved KPI charts & visuals
+
+![Uploading image.png…]()
+
 
 🔁 End-to-End Data Flow (Step-by-Step)
 1️⃣ Source Data Layer (MySQL / CSV)
