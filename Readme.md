@@ -1,5 +1,5 @@
 # Enterprise E-Commerce Analytics Platform  
-(SQL • Snowflake • MySQL • Python)
+(SQL • Snowflake  • Python)
 
 ## 📌 Project Overview
 This project simulates a **real-world enterprise analytics platform** built for an e-commerce company.  
