@@ -1,15 +1,19 @@
-📘 ENTERPRISE E-COMMERCE ANALYTICS PLATFORM
+# Enterprise E-Commerce Analytics Platform  
+(SQL • Snowflake  • Python)
 
-SQL | Snowflake | MySQL | Python
+## 📌 Project Overview
+This project simulates a **real-world enterprise analytics platform** built for an e-commerce company.  
+It demonstrates **end-to-end data engineering, analytics modeling, and advanced SQL analysis** using both
+traditional databases (MySQL) and a modern cloud data warehouse (Snowflake).
 
-📌 Project Objective
+The project is designed to showcase how **data analysts and analytics engineers** work with large datasets
+to deliver **daily KPIs, management insights, and advanced business analytics**.
 
-This project demonstrates how an enterprise e-commerce analytics platform is built end-to-end using
-SQL for data engineering & analytics and Python for automation and visualization.
+---
 
-The goal is to simulate real analyst + analytics engineer workflows, starting from raw data ingestion and ending with business KPIs and insights.
+## 🏗️ Architecture Overview
 
-🏗️ Architecture Overview
+```text
 Source Data
 (MySQL / CSV)
       |
@@ -20,196 +24,118 @@ Snowflake
 ├── ANALYTICS  → Star schema (facts & dimensions)
       |
       v
-SQL Analytics
-      |
-      v
-Python Automation & Visualization
+SQL Analytics & Python Automation
       |
       v
 Business KPIs & Insights
 
 
-This architecture follows modern enterprise ELT best practices, separating ingestion, transformation, and analytics.
 
-🛠️ Technology Stack
+🛠️ Tech Stack
 
+SQL – Advanced querying, analytics, window functions
 Snowflake – Cloud data warehouse & ELT processing
+MySQL – Source OLTP database
+Python – Data generation, validation & automation
+Git & GitHub – Version control & project collaboration
 
-SQL – Data modeling, transformations, analytics, KPIs
 
-MySQL – Source transactional database
 
-Python – Automation, validation, KPI extraction, visualization
 
-NumPy & Pandas – Data manipulation
 
-Matplotlib & Seaborn – Dashboards & insights
-
-Git & GitHub – Version control & project documentation
-
-📂 Project Structure & Flow
+📂 Project Structure
 enterprice_ecomerce_analytics/
 │
 ├── README.md
 │
 ├── sql/
 │   ├── 01_raw_to_staging.sql        -- Data cleaning & standardization
-│   ├── 02_data_quality_checks.sql   -- Data validation & integrity checks
+│   ├── 02_data_quality_checks.sql   -- Data validation queries
 │   ├── 03_clustering.sql            -- Performance optimization
 │   ├── 04_dim_tables.sql            -- Dimension tables
-│   ├── 05_fact_tables.sql           -- Fact tables (Star schema)
+│   ├── 05_fact_tables.sql           -- Fact tables
 │   ├── 06_constraints.sql           -- PK & FK (informational)
 │   ├── 08_daily_kpis.sql            -- Analyst daily KPIs
 │
-├── python/
-│   ├── data_generation.ipynb        -- Synthetic Kaggle-style data generation
-│   ├── validation.py                -- Automated data checks
-│   ├── kpi_extraction.py            -- KPI extraction from Snowflake
-│   └── dashboards.py                -- Python dashboards (Matplotlib & Seaborn)
-│
 ├── olistdata/
-│   └── synthetic_olist_data.csv     -- Synthetic e-commerce dataset
+│   └── synthetic_olist_data.csv     -- Synthetic Kaggle-style data
 │
-└── dashboards/
-    └── images/                      -- Saved KPI charts & visuals
+└── python/
+    ├── data_generation.ipynb        -- Synthetic data creation
+    └── validation.py                -- Automated checks
 
-🔁 End-to-End Data Flow (Step-by-Step)
-1️⃣ Source Data Layer (MySQL / CSV)
 
-Synthetic Kaggle-style e-commerce data
 
-Represents real OLTP systems
 
-Used only as input, never queried directly for analytics
+🧱 Data Engineering Workflow
+1️⃣ RAW Layer
 
-2️⃣ RAW Layer (Snowflake)
-
-Exact copy of source data
-
+Direct ingestion from MySQL / CSV
 No transformations
-
 Acts as a single source of truth
 
-📄 Implemented via:
+2️⃣ STAGING Layer
 
-Snowflake UI file upload
+Data cleaning & normalization
+Timestamp → date conversions
+Derived metrics (e.g., total item value)
+Data quality checks
 
-Tables stored in RAW schema
+3️⃣ ANALYTICS Layer (Star Schema)
 
-3️⃣ STAGING Layer (Snowflake)
+Fact tables: Orders, Payments, Order Items
+Dimension tables: Customers, Products, Date
+Optimized for BI tools & analytics queries
 
-Purpose:
-
-Clean data
-
-Standardize column formats
-
-Convert timestamps → dates
-
-Create derived metrics
-
-📄 SQL files:
-
-01_raw_to_staging.sql
-
-02_data_quality_checks.sql
-
-This layer ensures analytics reliability.
-
-4️⃣ ANALYTICS Layer (Star Schema)
-
-Purpose:
-
-Business-friendly structure
-
-Optimized for reporting & KPIs
-
-Includes:
-
-Fact tables: orders, payments, order_items
-
-Dimension tables: customers, products, date
-
-📄 SQL files:
-
-04_dim_tables.sql
-
-05_fact_tables.sql
-
-06_constraints.sql
-
-5️⃣ SQL Analytics Layer
-
-This is where analysts work daily.
-
-Includes:
-
-Daily revenue
-
-Order volume
-
+📊 Business Use Cases Covered
+✔ Analyst Daily Work
+Daily revenue tracking
+Order volume & health
+Failed / non-completed orders
 New vs returning customers
+Average order value (AOV)
 
-Payment health
+✔ Manager / Leadership Insights
+Top-performing products
+Revenue trends & growth
+Weekly / monthly performance
+Customer behavior analysis
 
-Average order value
+✔ Advanced Analytics (SQL)
 
-📄 SQL file:
+Window functions (LAG, RANK, ROW_NUMBER)
+Funnel analysis
+Cohort retention analysis
+Rolling averages
+Percentile analysis (PERCENTILE_CONT)
+Query optimization & clustering
 
-08_daily_kpis.sql
+🚀 Why This Project Is Different
 
-6️⃣ Python Automation & Visualization
+Built using enterprise data modeling practices
+Uses Snowflake ELT architecture
+Combines SQL + Python realistically
+Focuses on business questions, not just queries
+Structured & documented like a real company project
 
-Python is used where SQL should not be overused.
+📈 Example KPI Questions Answered
 
-Responsibilities:
-
-Automate KPI extraction from Snowflake
-
-Validate row counts & metrics
-
-Generate charts and trends
-
-Build reusable dashboard scripts
-
-Libraries used:
-
-pandas
-
-numpy
-
-matplotlib
-
-seaborn
-
-📄 Python files:
-
-kpi_extraction.py
-
-dashboards.py
-
-7️⃣ Business KPIs & Insights
-
-Final outputs include:
-
-Revenue trends
-
-Customer behavior patterns
-
-Growth metrics
-
-Visual dashboards for decision-making
-
-These outputs simulate what managers and leadership teams consume.
-
-📊 Business Questions Answered
-
-How much revenue are we generating daily?
-
+How much revenue did we generate yesterday?
 Are customers new or returning?
-
 Which products drive the most revenue?
-
 How is revenue trending week-over-week?
+Where are we losing customers in the funnel?
 
-Are there operational or payment issues?
+🧠 Key Learnings Demonstrated
+
+End-to-end data pipeline design
+Star schema modeling
+Advanced SQL analytics
+Performance optimization in Snowflake
+Translating data into business insights
+
+📬 Author
+
+Adithya G
+Data Analyst | Analytics Engineer
+Focused on building scalable, data-driven business solutions
