@@ -46,23 +46,32 @@ Git & GitHub – Version control & project collaboration
 📂 Project Structure
 enterprice_ecomerce_analytics/
 │
-├── README.md
-│
-├── sql/
-│   ├── 01_raw_to_staging.sql        -- Data cleaning & standardization
-│   ├── 02_data_quality_checks.sql   -- Data validation queries
-│   ├── 03_clustering.sql            -- Performance optimization
-│   ├── 04_dim_tables.sql            -- Dimension tables
-│   ├── 05_fact_tables.sql           -- Fact tables
-│   ├── 06_constraints.sql           -- PK & FK (informational)
-│   ├── 08_daily_kpis.sql            -- Analyst daily KPIs
+├── Readme.md
 │
 ├── olistdata/
-│   └── synthetic_olist_data.csv     -- Synthetic Kaggle-style data
+│   └── csv_files_used_for_ingestion/
 │
-└── python/
-    ├── data_generation.ipynb        -- Synthetic data creation
-    └── validation.py                -- Automated checks
+├── sql/
+│   ├── 01_raw_to_staging.sql
+│   ├── 02_data_quality_checks.sql
+│   ├── 03_clustering.sql
+│   ├── 04_dim_tables.sql
+│   ├── 05_fact_tables.sql
+│   ├── 06_constraints.sql
+│   └── 07_clustering.sql
+│
+├── Analyst_kpis/
+│   ├── 08_daily_kpis.sql
+│   ├── 09_customer_kpis.sql
+│   └── 10_operational_kpis.sql
+│
+└── Manager_Level_Analytics/
+    ├── 11_growth_metrics.sql
+    ├── 12_rankings.sql
+    ├── 13_revenue_analysis.sql
+    └── 14_executive_summary.sql
+
+
 
 
 
