@@ -9,6 +9,14 @@ Create business KPIs using SQL
 Automate snapshots
 Deliver manager & executive dashboards using Python.
 
+
+## 🔧 Tech Stack
+
+- **Data Warehouse:** Snowflake  
+- **Querying & Modeling:** Advanced SQL  
+- **Automation:** Snowflake TASKS  
+- **Dashboards:** Python (pandas, matplotlib)
+
 ---
 
 ## 🏗️ Architecture Overview
@@ -29,14 +37,6 @@ KPI Layer (Views + Snapshot Tables)
       v
 Python Dashboards &PNG reports
 
-
-
-## 🔧 Tech Stack
-
-- **Data Warehouse:** Snowflake  
-- **Querying & Modeling:** Advanced SQL  
-- **Automation:** Snowflake TASKS  
-- **Dashboards:** Python (pandas, matplotlib)
 
 
 
@@ -119,7 +119,7 @@ All business logic handled in **SQL**.
 - New vs returning customers
 - Revenue by payment type
 
-📁 `dashboards_python/reports/images/manager_dashboard.png`
+ `dashboards_python/reports/images/manager_dashboard.png`
 
 ---
 
@@ -129,7 +129,7 @@ All business logic handled in **SQL**.
 - Orders trend
 - Latest business-day KPI snapshot
 
-📁 `dashboards_python/reports/images/executive_dashboard.png`
+`dashboards_python/reports/images/executive_dashboard.png`
 
 ---
 
