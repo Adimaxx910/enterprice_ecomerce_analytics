@@ -21,26 +21,6 @@ Deliver manager & executive dashboards using Python.
 
 ## 🏗️ Architecture Overview
 
-```text
-Source Data
-(MySQL / CSV)
-      |
-      v
-Snowflake
-├── RAW        → Raw ingested data (as-is)
-├── STAGING    → Cleaned & standardized data
-├── ANALYTICS  → Star schema (facts & dimensions)
-      |
-      v
-KPI Layer (Views + Snapshot Tables)
-      |
-      v
-Python Dashboards &PNG reports
-
-
-
-
-
 📂 Project Structure
 enterprice_ecomerce_analytics/
 │
@@ -74,8 +54,6 @@ enterprice_ecomerce_analytics/
 │
 ├── README.md
 └── requirements.txt
-
-
 
 ````
 ---
