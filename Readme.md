@@ -21,6 +21,12 @@ Deliver manager & executive dashboards using Python.
 
 ## 🏗️ Architecture Overview
 
+```text
+
+
+
+
+
 📂 Project Structure
 enterprice_ecomerce_analytics/
 │
@@ -54,6 +60,8 @@ enterprice_ecomerce_analytics/
 │
 ├── README.md
 └── requirements.txt
+
+
 
 ````
 ---
@@ -98,7 +106,6 @@ All business logic handled in **SQL**.
 - Revenue by payment type
 
 ![Manager Dashboard](dashboards_python/reports/images/manager_dashboard.png)
-
 ---
 
 ### Executive Dashboard
@@ -108,7 +115,6 @@ All business logic handled in **SQL**.
 - Latest business-day KPI snapshot
 
 ![Executive Dashboard](dashboards_python/reports/images/executive_dashboard.png)
-
 ---
 
 ## ⚠️ Key Challenges Addressed
