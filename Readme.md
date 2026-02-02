@@ -46,30 +46,36 @@ Git & GitHub – Version control & project collaboration
 📂 Project Structure
 enterprice_ecomerce_analytics/
 │
-├── Readme.md
-│
-├── olistdata/
-│   └── csv_files_used_for_ingestion/
-│
 ├── sql/
-│   ├── 01_raw_to_staging.sql
-│   ├── 02_data_quality_checks.sql
-│   ├── 03_clustering.sql
-│   ├── 04_dim_tables.sql
-│   ├── 05_fact_tables.sql
-│   ├── 06_constraints.sql
-│   └── 07_clustering.sql
+│   ├── raw/
+│   ├── staging/
+│   ├── analytics/
+│   │   ├── fact_orders.sql
+│   │   ├── fact_payments.sql
+│   │   └── dimensions.sql
+│   │
+│   ├── kpi/
+│   │   ├── daily_business_kpis.sql
+│   │   ├── weekly_growth_kpis.sql
+│   │   ├── customer_new_vs_returning.sql
+│   │   └── executive_daily_snapshot_task.sql
 │
-├── Analyst_kpis/
-│   ├── 08_daily_kpis.sql
-│   ├── 09_customer_kpis.sql
-│   └── 10_operational_kpis.sql
+├── dashboards_python/
+│   ├── notebooks/
+│   │   ├── 01_data_exploration.ipynb
+│   │   ├── 02_manager_dashboard.ipynb
+│   │   └── 03_executive_dashboard.ipynb
+│   │
+│   ├── src/
+│   │   └── snowflake_client.py
+│   │
+│   └── reports/
+│       └── images/
+│           ├── manager_dashboard.png
+│           └── executive_dashboard.png
 │
-└── Manager_Level_Analytics/
-    ├── 11_growth_metrics.sql
-    ├── 12_rankings.sql
-    ├── 13_revenue_analysis.sql
-    └── 14_executive_summary.sql
+├── README.md
+└── requirements.txt
 
 
 
