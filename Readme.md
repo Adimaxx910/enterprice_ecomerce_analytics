@@ -119,7 +119,8 @@ All business logic handled in **SQL**.
 - New vs returning customers
 - Revenue by payment type
 
-📁 `dashboards_python/reports/images/manager_dashboard.png`
+![Manager Dashboard](dashboards_python/reports/images/manager_dashboard.png)
+
 ---
 
 ### Executive Dashboard
@@ -128,7 +129,8 @@ All business logic handled in **SQL**.
 - Orders trend
 - Latest business-day KPI snapshot
 
-📁 `dashboards_python/reports/images/executive_dashboard.png`
+![Executive Dashboard](dashboards_python/reports/images/executive_dashboard.png)
+
 ---
 
 ## ⚠️ Key Challenges Addressed
